@@ -10,20 +10,28 @@ package assignment1salarycalculator;
  * @author seanh
  */
 public class SalaryCalculator {
+    int yearlyHours = (52*40);
+    
    public double calcHourlyWage(int salary){
-       return 2; //CHANGE!!!!!!!!!
+       double hourlyWage = (salary/yearlyHours);
+       return hourlyWage;
    }
    
    public double calcSalary(int hourlyRate){
-       return 2; //CHANGE
+       double salary = (hourlyRate*yearlyHours);
+       return salary;
    }
    
-   public double calcTaxes(double perc){
-       return 2; //change
+   public double calcTaxes(double perc, int salary){
+       double taxAmount = (.01)*(perc) * salary;
+       return taxAmount; 
    }
-   
-   public double monthlyAfterTax(int salary, double perc){
-       return 2; //change
+
+   public double monthlyAfterTax(double perc, int salary){
+       double monthlyIncome = (salary/12);
+       System.out.println(monthlyIncome);
+       double monthlyAfterTax = (monthlyIncome - (.01*perc*monthlyIncome));
+       return monthlyAfterTax;
    }
    
 }

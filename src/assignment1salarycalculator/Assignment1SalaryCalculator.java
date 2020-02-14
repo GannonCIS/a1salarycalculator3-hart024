@@ -15,7 +15,7 @@ public class Assignment1SalaryCalculator {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        SalaryCalculator sc = new SalaryCalculator();
+        System.out.println(sc.monthlyAfterTax(37.5, 123000));
     }
-    
 }
