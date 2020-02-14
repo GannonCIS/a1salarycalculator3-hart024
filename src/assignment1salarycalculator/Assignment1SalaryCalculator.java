@@ -16,6 +16,7 @@ public class Assignment1SalaryCalculator {
      */
     public static void main(String[] args) {
         SalaryCalculator sc = new SalaryCalculator();
-        System.out.println(sc.monthlyAfterTax(37.5, 123000));
+        sc.monthlyAfterTax(37.59, 145000);
+        sc.calcHourlyWage(420069);
     }
 }
