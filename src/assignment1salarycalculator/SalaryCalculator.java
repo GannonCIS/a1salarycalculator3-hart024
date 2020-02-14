@@ -29,7 +29,6 @@ public class SalaryCalculator {
 
    public double monthlyAfterTax(double perc, int salary){
        double monthlyIncome = (salary/12);
-       System.out.println(monthlyIncome);
        double monthlyAfterTax = (monthlyIncome - (.01*perc*monthlyIncome));
        return monthlyAfterTax;
    }
